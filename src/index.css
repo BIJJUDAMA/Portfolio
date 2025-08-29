@@ -1,0 +1,59 @@
+/*
+  Importing the new set of futuristic fonts for the HTML modals.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: 'Audiowide', sans-serif;
+  --font-nav: 'Quantico', sans-serif;
+  --font-body: 'Turret Road', sans-serif;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #e5e7eb;
+  background-color: #050816;
+}
+
+
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: bolder;
+}
+
+.font-nav {
+  font-family: var(--font-nav);
+  font-weight: bolder;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00FFE5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFFFFF;
+}
