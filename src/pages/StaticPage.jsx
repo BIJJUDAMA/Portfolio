@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { personalInfo, whatIDo, skills, projects, contactPoints } from '../data/portfolioData.jsx';
 import Starfield from '../components/Starfield.jsx';
+import ResumeModal from '../components/ResumeModal.jsx';
 
 
 const SectionTitle = ({ children }) => (
@@ -14,6 +15,7 @@ const SectionTitle = ({ children }) => (
 const StaticPage = ({ onSwitchMode }) => {
     const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
     const [submitStatus, setSubmitStatus] = useState(null); // 'success', 'error', or null
+    const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
     const handleChange = (e) => {
         setFormState({ ...formState, [e.target.name]: e.target.value });
@@ -75,13 +77,19 @@ const StaticPage = ({ onSwitchMode }) => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
-                        className="mt-12"
+                        className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
                     >
                         <button
                             onClick={onSwitchMode}
-                            className="font-nav font-bold text-xl bg-[#00FFE5] text-black py-3 px-8 rounded-lg hover:bg-white transition-colors duration-300 shadow-lg shadow-[#00ffff]/30"
+                            className="w-full sm:w-auto font-nav font-bold text-xl bg-[#00FFE5] text-black py-3 px-8 rounded-lg hover:bg-white transition-colors duration-300 shadow-lg shadow-[#00ffff]/30"
                         >
-                            Switch to 3D Mode
+                            Enter 3D Mode
+                        </button>
+                        <button
+                            onClick={() => setIsResumeModalOpen(true)}
+                            className="w-full sm:w-auto font-nav font-bold text-xl bg-transparent border-2 border-[#00FFE5] text-[#00FFE5] py-3 px-8 rounded-lg hover:bg-[#00FFE5] hover:text-black transition-colors duration-300 shadow-lg shadow-[#00ffff]/30"
+                        >
+                            View Resume
                         </button>
                     </motion.div>
                 </header>
@@ -222,6 +230,8 @@ const StaticPage = ({ onSwitchMode }) => {
                     </p>
                 </footer>
             </div>
+
+            {isResumeModalOpen && <ResumeModal onClose={() => setIsResumeModalOpen(false)} />}
         </div>
     );
 };

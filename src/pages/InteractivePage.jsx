@@ -4,6 +4,7 @@ import AboutModal from '../components/AboutModal';
 import SkillsModal from '../components/SkillsModal';
 import ProjectsModal from '../components/ProjectsModal';
 import ContactModal from '../components/ContactModal';
+import ResumeModal from '../components/ResumeModal';
 
 // Receive onSwitchMode prop to allow toggling back to 2D
 function HomePage({ onSwitchMode }) {
@@ -58,6 +59,7 @@ function HomePage({ onSwitchMode }) {
             {activeModal === 'skills' && <SkillsModal onClose={handleCloseModal} />}
             {activeModal === 'projects' && <ProjectsModal onClose={handleCloseModal} />}
             {activeModal === 'contact' && <ContactModal onClose={handleCloseModal} />}
+            {activeModal === 'resume' && <ResumeModal onClose={handleCloseModal} />}
         </div>
     );
 }

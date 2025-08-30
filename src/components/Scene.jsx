@@ -20,14 +20,14 @@ const ContactIcons = ({ isMobile }) => {
         },
         linkedin: {
             position: 'fixed',
-            top: isMobile ? '-20rem' : '-25rem',
-            right: isMobile ? '3rem' : '15rem',
+            top: isMobile ? '-20rem' : '-22rem',
+            right: isMobile ? '3rem' : '18rem',
             pointerEvents: 'auto',
         },
         github: {
             position: 'fixed',
-            top: isMobile ? '-20rem' : '-25rem',
-            left: isMobile ? '3rem' : '15rem',
+            top: isMobile ? '-20rem' : '-22rem',
+            left: isMobile ? '3rem' : '18rem',
             pointerEvents: 'auto',
         }
     };

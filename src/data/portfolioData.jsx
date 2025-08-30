@@ -35,7 +35,7 @@ export const projects = [{
     id: 2,
     title: "Portfolio",
     description: "A personal portfolio website built with ReactJS and ThreeJS to showcase my projects, skills, and experience. Deployed on Netlify with Netlify Forms integration.",
-    liveLink: "nitansh.netlify.app",
+    //No livelink since you are already on the site
     githubLink: "https://github.com/BIJJUDAMA/Portfolio",
 },
 
@@ -51,6 +51,9 @@ export const orbitingSections = [{
 }, {
     id: 'projects',
     title: 'PROJECTS',
+}, {
+    id: 'resume',
+    title: 'RESUME',
 }, {
     id: 'contact',
     title: 'CONTACT',
