@@ -17,12 +17,13 @@ export const whatIDo = {
 };
 
 export const skills = {
-    "Frontend": ["React", "JavaScript (ES6+)", "HTML5 & CSS3"],
-    "Backend": ["Python (Django)", "Supabase", "Node.js"],
-    "Databases": ["MySQL", "Firebase"],
-    "Styling & Animation": ["Tailwind CSS", "Bootstrap CSS", "Framer Motion", "shadcn/ui"],
-    "DevOps & Tools": ["Git", "GitHub", "Vercel", "CLI"],
+    "Programming Languages": ["Python", "JavaScript", "Java"],
+    "Frontend": ["HTML", "CSS", "ReactJS"],
+    "Backend": ["Django", "Django REST Framework", "NodeJS"],
+    "Databases": ["MySQL"],
+    "Tools": ["Git", "VS Code"]
 };
+
 
 export const projects = [{
     id: 1,
@@ -34,7 +35,7 @@ export const projects = [{
 
 {
     id: 2,
-    title: "Dead Poets Society",
+    title: "PIT",
     description: "Recreation of Git in Python for my 3rd Sem CS Project. Implements core Git functionalities like init, add, commit, branch, checkout, merge, and log using file handling and data structures.",
     githubLink: "https://github.com/BIJJUDAMA/pit",
 },
