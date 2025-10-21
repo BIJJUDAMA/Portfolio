@@ -17,7 +17,7 @@ export const whatIDo = {
 };
 
 export const skills = {
-    "Frontend": ["React", "Vite", "Three.js", "JavaScript (ES6+)", "HTML5 & CSS3"],
+    "Frontend": ["React", "JavaScript (ES6+)", "HTML5 & CSS3"],
     "Backend": ["Python (Django)", "Supabase", "Node.js"],
     "Databases": ["MySQL", "Firebase"],
     "Styling & Animation": ["Tailwind CSS", "Bootstrap CSS", "Framer Motion", "shadcn/ui"],
@@ -31,8 +31,15 @@ export const projects = [{
     liveLink: "https://dpsavv.vercel.app",
     githubLink: "https://github.com/BIJJUDAMA/Dead-Poets-Society",
 },
+
 {
     id: 2,
+    title: "Dead Poets Society",
+    description: "Recreation of Git in Python for my 3rd Sem CS Project. Implements core Git functionalities like init, add, commit, branch, checkout, merge, and log using file handling and data structures.",
+    githubLink: "https://github.com/BIJJUDAMA/pit",
+},
+{
+    id: 3,
     title: "Portfolio",
     description: "A personal portfolio website built with ReactJS and ThreeJS to showcase my projects, skills, and experience. Deployed on Netlify with Netlify Forms integration.",
     //No livelink since you are already on the site
