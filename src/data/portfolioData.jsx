@@ -10,9 +10,9 @@ export const personalInfo = {
 
 export const whatIDo = {
     title: "What I Do",
-    description: "I specialize in bringing ideas to life by working across the entire stack. I'm comfortable building with modern JavaScript frameworks like React alongside powerful serverless backends like Supabase, as well as crafting applications with traditional, robust frameworks like Django.",
+    description: "I specialize in bringing ideas to life by working across the entire stack. I'm comfortable building with modern JavaScript libraries like React alongside powerful serverless backends like Supabase, as well as crafting applications with traditional, robust frameworks like Django.",
     frontend: "I focus on creating fast, responsive, and intuitive user interfaces using React, Vite, and Tailwind CSS. I love adding a layer of polish with animations using tools like Framer Motion.",
-    backend: "I have experience building secure and scalable backend systems, handling everything from user authentication and database management (MySQL, Supabase, Firebase) to API logic.",
+    backend: "I have experience building secure and scalable backend systems, designing RESTful APIs, managing databases (MySQL, Supabase, Firebase), and deploying applications on modern cloud and serverless platforms.",
     integration: "I excel at connecting the frontend and backend seamlessly to create full-featured applications with features like user profiles, admin dashboards, and dynamic content."
 };
 
@@ -21,7 +21,8 @@ export const skills = {
     "Frontend": ["HTML", "CSS", "ReactJS"],
     "Backend": ["Django", "Django REST Framework", "NodeJS"],
     "Databases": ["MySQL"],
-    "Tools": ["Git", "VS Code"]
+    "Tools": ["Git", "VS Code"],
+    "Styling Frameworks": ["Tailwind CSS", "Bootstrap", "Framer Motion", "shadcn UI"]
 };
 
 
@@ -70,7 +71,7 @@ export const orbitingSections = [{
 // This array provides data for the contact icons in the 3D scene.
 export const contactPoints = [{
     id: 'linkedin',
-    link: 'https://www.linkedin.com/in/nitansh-shankar/',
+    link: 'https://www.linkedin.com/in/shankarnitansh/',
     logo: (props) => (
         <svg {...props} xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
